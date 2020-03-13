@@ -14,8 +14,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script> 
 
   <script type="text/babel">
+    const Title = React.createClass({
+      render: function(){
+        return(
+          <div> 
+            <h1>Titulo</h1>
+            <span>Hello world Title com span</span>
+          </div>
+        )
+      }
+    })
+
     ReactDOM.render(
-      <h1>Hello World</h1>,
+      <Title />,
       document.getElementById('app')
     )
   </script>
