@@ -19,5 +19,6 @@
   "homepage": "https://github.com/junyorff12/react-ninja#readme",
   "devDependencies": {
     "standard": "^14.3.1"
-  }
+  },
+  "dependencies": {}
 }
