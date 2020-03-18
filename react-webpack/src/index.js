@@ -1,1 +1,3 @@
-console.log('tudo funcionando!!')
+const sum = require('./app')
+
+console.log(sum(1, 3))
