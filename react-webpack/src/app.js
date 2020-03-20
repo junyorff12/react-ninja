@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Title = React.createClass({
+const App = React.createClass({
   render: function () {
-    return React.createElement('h1', null, 'titulo');
+    return <div>Aplcação 1</div>;
   }
-})
+});
 
-export default Title;
+export default App;
