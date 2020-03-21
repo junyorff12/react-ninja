@@ -1,8 +1,14 @@
 import React from 'react';
+import Title from './title';
 
 const App = React.createClass({
+
   render: function () {
-    return <div>Aplcação 1</div>;
+    return (
+      <div className='container'>
+        <Title name='Junyor Silva' lastname='FF12' />
+      </div>
+    );
   }
 });
 
