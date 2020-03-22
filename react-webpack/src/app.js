@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import Square from './square';
+import LikeButton from './like-button';
+import SearchButton from './search-button.js';
 
 class App extends Component {
   render () {
     return (
-      <div className='container' onClick={e => { alert('clicou....'); }}>
-        {['red', 'yellow', 'green'].map((square, index) => (
-          <Square key={index} color={square} />
-        ))}
+      // <Button>Texto do button</Button> // usando children
+      <div>
+
+        <LikeButton />
+        <SearchButton />
       </div>
+      /*  <div className='container' onClick={e => { alert('clicou....'); }}>
+                 {['red', 'yellow', 'green'].map((square, index) => (
+                   <Square key={index} color={square} />
+                 ))}
+               </div> */
     );
   }
 }
