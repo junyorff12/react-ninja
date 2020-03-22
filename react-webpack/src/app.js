@@ -1,7 +1,19 @@
-import React from 'react';
-import Title from './title';
+import React, { Component } from 'react';
+import Square from './square';
 
-const App = React.createClass({
+class App extends Component {
+  render () {
+    return (
+      <div className='container' onClick={e => { alert('clicou....'); }}>
+        {['red', 'yellow', 'green'].map((square, index) => (
+          <Square key={index} color={square} />
+        ))}
+      </div>
+    );
+  }
+}
+
+/* const App = React.createClass({
 
   render: function () {
     return (
@@ -11,5 +23,5 @@ const App = React.createClass({
     );
   }
 });
-
+ */
 export default App;
